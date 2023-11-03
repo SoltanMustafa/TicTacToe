@@ -8,6 +8,7 @@ const App ={
     notification: document.querySelector('[data-id="notification-holder"]'),
     playerWonText: document.querySelector('[data-id="player-won"]'),
     playAgainBtn: document.querySelector('[data-id="play-again-btn"]'),
+    turn: document.querySelector('[data-id="x-turn"]'),
 
   },
 
@@ -69,6 +70,12 @@ const App ={
       console.log('Start a new game');
     });
 
+    App.$.playAgainBtn.addEventListener("click", event => {
+      App.state.moves = [];
+      App.$.boxes.forEach(box => box.replaceChildren());
+      App.$.notification.classList.add('hidden')
+    });
+
     App.$.boxes.forEach(box => {
       box.addEventListener("click", (event) => {
 
@@ -91,14 +98,25 @@ const App ={
 
         const currentPlayer = App.state.moves.length === 0? 1: getoppositePlayer(lastMove.playerId);
 
+        const nextPlayer = getoppositePlayer(currentPlayer)
+
         const icon = document.createElement("i");
+        const turnIcon = document.createElement("i");
+        const turnLabel = document.createElement('p');
+        turnLabel.innerText = `Player ${nextPlayer}, you are up!`
 
         if (currentPlayer === 1){
           icon.classList.add('fa-solid', 'fa-xmark')
+          turnIcon.classList.add('fa-solid', 'fa-o', 'yellow')
+          turnLabel.classList.add('yellow') 
+          
         }else{
           icon.classList.add('fa-solid', 'fa-o')
+          turnIcon.classList.add('fa-solid', 'fa-xmark', 'red')
+          turnLabel.classList.add('red')
         } 
 
+        App.$.turn.replaceChildren(turnIcon, turnLabel);
 
         App.state.moves.push({
           boxId: +box.id,

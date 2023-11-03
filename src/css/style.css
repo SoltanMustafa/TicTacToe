@@ -31,38 +31,32 @@
           justify-content: space-between;
 }
 .main-holder .top-bar .text-holder {
-  font-size: 20px;
+  font-size: 18px;
   margin-left: 10px;
 }
 .main-holder .top-bar .text-holder .x-turn {
-  color: rgb(218, 58, 18);
-  display: none;
   line-height: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 5px;
+}
+.main-holder .top-bar .text-holder .x-turn p {
+  line-height: 25px;
 }
 .main-holder .top-bar .text-holder .x-turn i {
   margin-left: 5px;
   font-size: 25px;
 }
-.main-holder .top-bar .text-holder .o-turn {
-  color: green;
-  display: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  line-height: 1;
+.main-holder .top-bar .text-holder .red {
+  color: rgb(218, 58, 18);
 }
-.main-holder .top-bar .text-holder .o-turn i {
-  margin-left: 5px;
-  font-size: 25px;
-}
-.main-holder .top-bar .text-holder .active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 5px;
+.main-holder .top-bar .text-holder .yellow {
+  color: rgb(204, 164, 4);
 }
 .main-holder .top-bar .game-controller {
   height: 80%;
