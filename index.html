@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="src/css/style.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="main-holder" data-id="main-holder">
+    <div class="top-bar" data-id="top-bar">
+      <div class="text-holder" data-id="text-holder">
+        <div class="x-turn active" data-id="x-turn">
+          <i class="fa-solid fa-xmark"></i><span> player, it is your turn</span>
+        </div>
+        <div class="o-turn" data-id="0-turn">
+          <i class="fa-solid fa-o"></i><span> player, it is your turn</span>
+        </div>
+      </div>
+      <div class="game-controller" data-id="game-controller">
+        <span class="game-text">
+          Game Menu
+        </span>
+        <ul>
+          <li>
+            <a href="" class="reset-button" data-id="reset-button">Reset Game</a>
+          </li>
+          <li>
+            <a href="" class="new-game-button" data-id="new-game-button">New game</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="mid-section" data-id="mid-section">
+      <div id="1" class="box" data-id="box"></div>
+      <div id="2" class="box" data-id="box"></div>
+      <div id="3" class="box" data-id="box"></div>
+      <div id="4" class="box" data-id="box"></div>
+      <div id="5" class="box" data-id="box"></div>
+      <div id="6" class="box" data-id="box"></div>
+      <div id="7" class="box" data-id="box"></div>
+      <div id="8" class="box" data-id="box"></div>
+      <div id="9" class="box" data-id="box"></div>
+    </div>
+    <div class="bottom-bar" data-id="bottom-bar">
+        <div class="win-for-x" data-id="win-for-x">
+          <span class="win-x-text" data-id="win-x-text">
+            <i class="fa-solid fa-xmark"></i> player
+          </span>
+          <span class="score-holder" data-id="score-holder">0</span>
+        </div>
+        <div class="draw" data-id="draw">
+          <span class="draw-text" data-id="draw-text">
+            Draw
+          </span>
+          <span class="score-holder" data-id="score-holder">0</span>
+        </div>
+        <div class="win-for-o" data-id="win-for-o">
+          <span class="win-o-text" data-id="win-o-text">
+            <i class="fa-solid fa-o"></i> player
+          </span>
+          <span class="score-holder" data-id="score-holder">0</span>
+        </div>
+    </div>
+    
+    <div class="notification-holder hidden" data-id="notification-holder">
+      <div class="notification" data-id="notification">
+        <div class="player-won" data-id="player-won">
+        </div>
+      </div>
+      <button class="play-again-btn" data-id="play-again-btn">
+        Play again
+      </button>
+    </div>
+
+  </div>
+
+  
+</body>
+  <script src="src/js/app.js"></script>
+</html>
