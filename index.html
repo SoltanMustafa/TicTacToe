@@ -13,7 +13,7 @@
     <div class="top-bar" data-id="top-bar">
       <div class="text-holder" data-id="text-holder">
         <div class="x-turn" data-id="x-turn">
-          <!-- <i class="fa-solid fa-xmark"></i><span> player, it is your turn</span> -->
+          <i class="fa-solid fa-xmark red"></i><p class="red"> Player-1, you're up!</p>
         </div>
       </div>
       <div class="game-controller" data-id="game-controller">
@@ -46,19 +46,19 @@
           <span class="win-x-text" data-id="win-x-text">
             <i class="fa-solid fa-xmark"></i> player
           </span>
-          <span class="score-holder" data-id="score-holder">0</span>
+          <span class="score-holder" data-id="p1-wins">0</span>
         </div>
         <div class="draw" data-id="draw">
           <span class="draw-text" data-id="draw-text">
             Draw
           </span>
-          <span class="score-holder" data-id="score-holder">0</span>
+          <span class="score-holder" data-id="draw-score">0</span>
         </div>
         <div class="win-for-o" data-id="win-for-o">
           <span class="win-o-text" data-id="win-o-text">
             <i class="fa-solid fa-o"></i> player
           </span>
-          <span class="score-holder" data-id="score-holder">0</span>
+          <span class="score-holder" data-id="p2-wins">0</span>
         </div>
     </div>
     
@@ -76,5 +76,5 @@
 
   
 </body>
-  <script src="src/js/app.js"></script>
+  <script src="src/js/app.js" type="module"></script>
 </html>

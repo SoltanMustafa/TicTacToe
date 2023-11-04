@@ -47,15 +47,16 @@
 }
 .main-holder .top-bar .text-holder .x-turn p {
   line-height: 25px;
+  color: inherit;
 }
 .main-holder .top-bar .text-holder .x-turn i {
   margin-left: 5px;
   font-size: 25px;
 }
-.main-holder .top-bar .text-holder .red {
+.main-holder .top-bar .text-holder .x-turn .red {
   color: rgb(218, 58, 18);
 }
-.main-holder .top-bar .text-holder .yellow {
+.main-holder .top-bar .text-holder .x-turn .yellow {
   color: rgb(204, 164, 4);
 }
 .main-holder .top-bar .game-controller {

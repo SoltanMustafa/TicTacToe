@@ -27,17 +27,18 @@
                 gap: 5px;
                 p{
                     line-height: 25px;
+                    color: inherit;
                 }
                 i{
                     margin-left: 5px;
                     font-size: 25px;
                 }
-            }
-            .red{
-                color: rgb(218, 58, 18);
-            }
-            .yellow{
-                color: rgb(204, 164, 4);
+                .red{
+                    color: rgb(218, 58, 18);
+                }
+                .yellow{
+                    color: rgb(204, 164, 4);
+                }
             }
         }
         .game-controller{
